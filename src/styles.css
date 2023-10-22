@@ -1,0 +1,41 @@
+.conferencia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), url("./images/ba1-min.jpg");
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  /* filter: brightness(0.5); */
+}
+
+.oradores {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+}
+
+.tag {
+  border-radius: 5px;
+  padding: 2.5px 5px;
+  font-size: 0.75rem;
+}
+
+.imagen {
+  min-height: 350px;
+  background-image: url("./images/honolulu-min.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
