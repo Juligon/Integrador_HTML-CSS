@@ -13,9 +13,13 @@
   align-content: center;
 }
 
-.card {
-  width: 300px;
+/* .card {
+  width: 215px;
   height: auto;
+} */
+
+.card-text {
+  font-size: 12px;
 }
 
 .tag {

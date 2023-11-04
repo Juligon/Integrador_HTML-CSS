@@ -1,223 +1,526 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="icon" href="./images/favicon.ico" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<title>Conf Bs. As.</title>
+	</head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./styles.css"> 
-	<link rel="icon" href="./images/favicon.ico">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<title>Conf Bs. As.</title>
-</head>
-
-<body>
-
-	<header>
-		<!-- navbar -->
-		<nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark" style="background-color: #333a40; padding: 0.25rem 2rem;">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<img
-						src="./images/codoacodo-min.png"
-						alt="Logo"
-						height="50px"
-						class="d-inline-block"
-					/>
-					<span class="d-inline-block text-light fw-semibold">Conf Bs As</span>
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active text-light" aria-current="page" href="#">La conferencia</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-secondary" href="#">Los oradores</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-secondary" href="#">El lugar y la fecha</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-secondary" href="#">Conviértete en orador</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-success" href="#">Comprar tickets</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-
-	<main>
-
-		<!-- la conferencia -->
-		<div class="container-fluid conferencia">
-			<div class="col-md-6 ms-auto text-end">
-				<div class="text-light" style="padding: 12rem 2rem;">
-					<p class="fs-2 fw-semibold">Conf Bs As</p>
-      	  <p class="fs-5">
-           	Bs As llega por primera vez a Argentina. Un evento para
-           	compartir con nuestra comunidad el conocimiento y experiencia de
-           	los expertos que están creando el futuro de internet. Ven a
-           	conocer a miembros del evento, a otros estudiantes de Codo a
-           	Codo y los oradores de primer nivel que tenemos para ti. Te
-           	esperamos!
-        	</p>
-					<div class="d-flex justify-content-end gap-2">
-						<button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-						<button type="button" class="btn btn-success">Comprar tickets</button>
+	<body>
+		<header>
+			<!-- navbar -->
+			<nav
+				class="navbar fixed-top navbar-expand-lg"
+				data-bs-theme="dark"
+				style="background-color: #333a40; padding: 0.25rem 2rem"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="./images/codoacodo-min.png"
+							alt="Logo"
+							height="50px"
+							class="d-inline-block"
+						/>
+						<span class="d-inline-block text-light fw-semibold"
+							>Conf Bs As</span
+						>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a
+									class="nav-link active text-light"
+									aria-current="page"
+									href="#conferencia"
+									>La conferencia</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary" href="#oradores"
+									>Los oradores</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary" href="#lugar-y-fecha"
+									>El lugar y la fecha</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-secondary" href="#conviertete-en-orador"
+									>Conviértete en orador</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-success" href="#comprar-tickets"
+									>Comprar tickets</a
+								>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</div>
-		</div>
+			</nav>
+		</header>
 
-		<!-- oradores -->
-		<section>
-			<div class="container-fluid" style="padding: 1rem 2rem ">
-				<div class="text-center">
-					<p class="mb-1 text-secondary">CONOCÉ A LOS</p>
-					<p class="fs-3 fw-semibold">ORADORES</p>
-				</div>
-
-				<div class="oradores">
-					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-						<div class="col">
-							<div class="card h-100">
-								<img src="./images/steve-min.jpg" class="card-img-top" alt="...">
-								<div class="card-body">
-									<div style="padding-bottom: 0.5rem;">
-										<span class="tag fw-bold" style="background-color: #FFC207;">JavaScript</span>
-										<span class="tag fw-bold text-light" style="background-color: #16A2B9;">React</span>
-									</div>
-									<h5 class="card-title">Steve Jobs</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-									debitis quas. Modi ratione autem vitae consectetur ipsam
-									incidunt. Eius rem odio illum accusamus optio non velit eligendi
-									eveniet distinctio omnis.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card h-100">
-								<img src="./images/bill-min.jpg" class="card-img-top" alt="...">
-								<div class="card-body">
-									<div style="padding-bottom: 0.5rem;">
-										<span class="tag fw-bold" style="background-color: #FFC207;">JavaScript</span>
-										<span class="tag fw-bold text-light" style="background-color: #16A2B9;">React</span>
-									</div>
-									<h5 class="card-title">Bill Gates</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-									debitis quas. Modi ratione autem vitae consectetur ipsam
-									incidunt. Eius rem odio illum accusamus optio non velit eligendi
-									eveniet distinctio omnis.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card h-100">
-								<img src="./images/ada-min.jpeg" class="card-img-top" alt="...">
-								<div class="card-body">
-									<div style="padding-bottom: 0.5rem;">
-										<span class="tag fw-bold text-light" style="background-color: #6D7A83;">Negocios</span>
-										<span class="tag fw-bold text-light" style="background-color: #D9353E;">Startups</span>
-									</div>
-									<h5 class="card-title">Ada Lovelace</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-									debitis quas. Modi ratione autem vitae consectetur ipsam
-									incidunt. Eius rem odio illum accusamus optio non velit eligendi
-									eveniet distinctio omnis.</p>
-								</div>
+		<main>
+			<!-- la conferencia -->
+			<section id="conferencia">
+				<div class="container-fluid conferencia">
+					<div class="col-md-4 ms-auto text-end">
+						<div class="text-light" style="padding: 12rem 2rem">
+							<p class="fs-2 fw-semibold">Conf Bs As</p>
+							<p class="fs-6">
+								Bs As llega por primera vez a Argentina. Un evento para
+								compartir con nuestra comunidad el conocimiento y experiencia de
+								los expertos que están creando el futuro de internet. Ven a
+								conocer a miembros del evento, a otros estudiantes de Codo a
+								Codo y los oradores de primer nivel que tenemos para ti. Te
+								esperamos!
+							</p>
+							<div class="d-flex justify-content-end gap-2">
+								<button type="button" class="btn btn-outline-light">
+									Quiero ser orador
+								</button>
+								<button type="button" class="btn btn-success">
+									Comprar tickets
+								</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- lugar y fecha -->
-		<section>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 col-md-6 imagen">
-						<!-- <img src="./images/honolulu-min.jpg" alt="Honolulu" style="min-height: 250px;"> -->
-					</div>
-					<div class="col-12 col-md-6 text-light" style="background-color: #333a40; padding: 1rem; min-height: 250px;">
-						<p class="fs-3 fw-semibold">Bs As - Octubre</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At placeat molestias vitae unde facere voluptatem
-							minus voluptates commodi corrupti tenetur! Pariatur qui enim animi sapiente sed error similique molestiae
-							ipsum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, excepturi deleniti harum
-							facilis id, a illo assumenda officiis illum praesentium eos. Qui laborum ratione in hic ducimus debitis
-							voluptatum aperiam.</p>
-						<button type="button" class="btn btn-outline-light">Conocé más</button>
+			<!-- oradores -->
+			<section id="oradores">
+				<div class="container-fluid" style="padding: 1rem">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 col-xl-7">
+							<div class="text-center">
+								<p class="mb-1 text-secondary">CONOCÉ A LOS</p>
+								<p class="fs-3 fw-semibold">ORADORES</p>
+							</div>
+
+							<div class="oradores">
+								<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+									<div class="col">
+										<div class="card h-100">
+											<img
+												src="./images/steve-min.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="card-body">
+												<div style="padding-bottom: 0.5rem">
+													<span
+														class="tag fw-bold"
+														style="background-color: #ffc207"
+														>JavaScript</span
+													>
+													<span
+														class="tag fw-bold text-light"
+														style="background-color: #16a2b9"
+														>React</span
+													>
+												</div>
+												<h5 class="card-title">Steve Jobs</h5>
+												<p class="card-text">
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Fugit, debitis quas. Modi ratione autem vitae
+													consectetur ipsam incidunt. Eius rem odio illum
+													accusamus optio non velit eligendi eveniet distinctio
+													omnis.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card h-100">
+											<img
+												src="./images/bill-min.jpg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="card-body">
+												<div style="padding-bottom: 0.5rem">
+													<span
+														class="tag fw-bold"
+														style="background-color: #ffc207"
+														>JavaScript</span
+													>
+													<span
+														class="tag fw-bold text-light"
+														style="background-color: #16a2b9"
+														>React</span
+													>
+												</div>
+												<h5 class="card-title">Bill Gates</h5>
+												<p class="card-text">
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Fugit, debitis quas. Modi ratione autem vitae
+													consectetur ipsam incidunt. Eius rem odio illum
+													accusamus optio non velit eligendi eveniet distinctio
+													omnis.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card h-100">
+											<img
+												src="./images/ada-min.jpeg"
+												class="card-img-top"
+												alt="..."
+											/>
+											<div class="card-body">
+												<div style="padding-bottom: 0.5rem">
+													<span
+														class="tag fw-bold text-light"
+														style="background-color: #6d7a83"
+														>Negocios</span
+													>
+													<span
+														class="tag fw-bold text-light"
+														style="background-color: #d9353e"
+														>Startups</span
+													>
+												</div>
+												<h5 class="card-title">Ada Lovelace</h5>
+												<p class="card-text">
+													Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. Fugit, debitis quas. Modi ratione autem vitae
+													consectetur ipsam incidunt. Eius rem odio illum
+													accusamus optio non velit eligendi eveniet distinctio
+													omnis.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- formulario -->
-		<section>
-			<div class="container-fluid formulario" style="padding: 1rem 2rem ">
-				<div class="text-center">
-					<p class="mb-1 text-secondary">CONVIÉRTETE EN UN</p>
-					<p class="fs-3 fw-semibold">ORADOR</p>
-					<p class="text-secondary">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
-				</div>
-					
-				<form class="col-12 col-md-6">
+			<!-- lugar y fecha -->
+			<section id="lugar-y-fecha">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-6">
-							<input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+						<div class="col-12 col-md-6 imagen">
+							<!-- <img src="./images/honolulu-min.jpg" alt="Honolulu" style="min-height: 250px;"> -->
 						</div>
-						<div class="col-md-6">
-							<input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+						<div
+							class="col-12 col-md-6 text-light"
+							style="
+								background-color: #333a40;
+								padding: 1rem;
+								min-height: 250px;
+							"
+						>
+							<p class="fs-3 fw-semibold">Bs As - Octubre</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+								placeat molestias vitae unde facere voluptatem minus voluptates
+								commodi corrupti tenetur! Pariatur qui enim animi sapiente sed
+								error similique molestiae ipsum! Lorem, ipsum dolor sit amet
+								consectetur adipisicing elit. Perspiciatis, excepturi deleniti
+								harum facilis id, a illo assumenda officiis illum praesentium
+								eos. Qui laborum ratione in hic ducimus debitis voluptatum
+								aperiam.
+							</p>
+							<button type="button" class="btn btn-outline-light">
+								Conocé más
+							</button>
 						</div>
 					</div>
-					<div class="col my-3">
-						<textarea class="form-control" placeholder="¿Sobre qué quiéres hablar?" id="floatingTextarea2" style="height: 100px" required></textarea>
-						<label class="small text-secondary" for="floatingTextarea2">Recuerda incluir un título para tu charla</label>
-					</div>
-					<button type="submit" class="btn btn-success col-md-12">Enviar</button>
-				</form>
+				</div>
+			</section>
 
+			<!-- formulario -->
+			<section id="conviertete-en-orador">
+				<div class="container" style="padding: 1rem">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 col-xl-7">
+							<div class="text-center">
+								<p class="mb-1 text-secondary">CONVIÉRTETE EN UN</p>
+								<p class="fs-3 fw-semibold">ORADOR</p>
+								<p class="text-secondary">
+									Anótate como orador para dar una charla ignite. Cuéntanos de
+									qué quieres hablar!
+								</p>
+							</div>
+
+							<form action="">
+								<div class="row gx-2">
+									<div class="col-md mb-3">
+										<input
+											type="text"
+											class="form-control"
+											placeholder="Nombre"
+											aria-label="Nombre"
+											required
+										/>
+									</div>
+									<div class="col-md mb-3">
+										<input
+											type="text"
+											class="form-control"
+											placeholder="Apellido"
+											aria-label="Apellido"
+											id="apellido"
+											required
+										/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col mb-3">
+										<textarea
+											class="form-control"
+											placeholder="¿Sobre qué quiéres hablar?"
+											id="floatingTextarea2"
+											style="height: 100px"
+											required
+										></textarea>
+										<label class="small text-secondary" for="floatingTextarea2"
+											>Recuerda incluir un título para tu charla</label
+										>
+									</div>
+								</div>
+								<div class="row gx-2">
+									<button type="submit" class="btn btn-success col-md m-1">
+										Enviar
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- comprar tickets -->
+			<section id="comprar-tickets">
+				<div class="container" style="padding: 1rem">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 col-xl-7">
+							<div class="row row-cols-1 row-cols-md-3 text-center">
+								<div class="col">
+									<div class="card mb-4 rounded-3 shadow-sm border-primary">
+										<div
+											class="card-header py-3 text-white bg-primary border-primary"
+										>
+											<h5 class="my-0 fw-normal">Estudiante</h5>
+										</div>
+										<div class="card-body">
+											<p>Tienen un descuento</p>
+											<p class="fs-2 fw-semibold card-title pricing-card-title">
+												80%
+											</p>
+											<small class="fw-light text-muted mt-3"
+												>* Presentar documentación</small
+											>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card mb-4 rounded-3 shadow-sm border-info">
+										<div
+											class="card-header py-3 text-white bg-info border-info"
+										>
+											<h5 class="my-0 fw-normal">Trainee</h5>
+										</div>
+										<div class="card-body">
+											<p>Tienen un descuento</p>
+											<p class="fs-2 fw-semibold card-title pricing-card-title">
+												50%
+											</p>
+											<small class="fw-light text-muted mt-3"
+												>* Presentar documentación</small
+											>
+										</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="card mb-4 rounded-3 shadow-sm border-warning">
+										<div
+											class="card-header py-3 text-white bg-warning border-warning"
+										>
+											<h5 class="my-0 fw-normal">Junior</h5>
+										</div>
+										<div class="card-body">
+											<p>Tienen un descuento</p>
+											<p class="fs-2 fw-semibold card-title pricing-card-title">
+												15%
+											</p>
+											<small class="fw-light text-muted mt-3"
+												>* Presentar documentación</small
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<p class="mb-1 text-secondary">VENTA</p>
+								<p class="fs-3 fw-semibold">VALOR TICKET $200</p>
+							</div>
+
+							<form action="">
+								<div class="row gx-2">
+									<div class="col-md mb-3">
+										<input
+											type="text"
+											class="form-control"
+											placeholder="Nombre"
+											aria-label="Nombre"
+											required
+										/>
+									</div>
+									<div class="col-md mb-3">
+										<input
+											type="text"
+											class="form-control"
+											placeholder="Apellido"
+											aria-label="Apellido"
+											id="apellido"
+											required
+										/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col mb-3">
+										<input
+											type="email"
+											class="form-control"
+											placeholder="Email"
+											aria-label="Email"
+											id="mail"
+											required
+										/>
+									</div>
+								</div>
+								<div class="row gx-2">
+									<div class="col-md mb-3">
+										<label for="cantidadTickets" class="form-label"
+											>Cantidad</label
+										>
+										<input
+											type="number"
+											class="form-control"
+											placeholder="Cantidad"
+											aria-label="Cantidad"
+											id="cantidadTickets"
+											min="1"
+											required
+										/>
+									</div>
+									<div class="col-md mb-3">
+										<label for="categoriaSelect" class="form-label"
+											>Categoría</label
+										>
+										<select
+											class="form-select"
+											aria-label="Categoría"
+											id="categoriaSelect"
+										>
+											<option value="" selected>-- Seleccione --</option>
+											<option value="0">Sin Categoria</option>
+											<option value="1">Estudiante</option>
+											<option value="2">Trainee</option>
+											<option value="3">Junior</option>
+										</select>
+									</div>
+								</div>
+								<div class="alert alert-primary mt-2 mb-4" role="alert">
+									Total a pagar: $
+									<span id="totalPago" class="align-middle"></span>
+								</div>
+								<div class="row gx-2">
+									<div class="col-md mb-3">
+										<button
+											type="reset"
+											class="w-100 btn btn-success"
+											id="btnBorrar"
+										>
+											Borrar
+										</button>
+									</div>
+									<div class="col-md mb-3">
+										<button
+											type="button"
+											class="w-100 btn btn-success"
+											id="btnResumen"
+										>
+											Resumen
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer -->
+		<footer style="background-color: #163d54; padding: 1rem">
+			<div class="row">
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link text-light" aria-current="page" href="#"
+							>Preguntas frecuentes</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Contactanos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Prensa</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Conferencias</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Términos y condiciones</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Privacidad</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#">Estudiantes</a>
+					</li>
+				</ul>
 			</div>
-		</section>
+		</footer>
 
-	</main>
-
-	<!-- footer -->
-	<footer style="background-color: #163D54; padding: 1rem;">
-		<div class="row">
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-					<a class="nav-link text-light" aria-current="page" href="#">Preguntas frecuentes</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Contactanos</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Prensa</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Conferencias</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Términos y condiciones</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Privacidad</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Estudiantes</a>
-				</li>
-			</ul>
-		</div>
-	</footer>
-
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</body>
-
+		<script src="comprar-tickets.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
